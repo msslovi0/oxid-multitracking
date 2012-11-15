@@ -12,6 +12,6 @@ $aModule = array(
     'version'      => '1.0',
     'author'       => 'WIBROS GmbH',
     'extend'       => array(
-        'oxorder' => 'wibros/multitracking/multitracking'
+        'oxorder' => 'multitracking/multitracking'
     )
 );
