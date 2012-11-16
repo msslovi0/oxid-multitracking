@@ -26,7 +26,7 @@
                      $this->_sShipTrackUrl = "http://extranet.dpd.de/cgi-bin/delistrack?typ=1&lang=de&pknr=".$sTrackId;
                      break;
                  case "GLS":
-                     $this->_sShipTrackUrl = "http://www.gls-group.eu/276-I-PORTAL-WEB/content/GLS/DE03/DE/5004.htm?txtRefNo=".$sTrackId;
+                     $this->_sShipTrackUrl = "https://gls-group.eu/DE/de/paketverfolgung?match=".$sTrackId;
                      break;
                  case "UPS":
                      $this->_sShipTrackUrl = "http://wwwapps.ups.com/WebTracking/processRequest?HTMLVersion=5.0&Requester=NES&AgreeToTermsAndConditions=yes&loc=de_DE&tracknum=".$sTrackId; 
