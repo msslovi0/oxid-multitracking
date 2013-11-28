@@ -14,7 +14,7 @@
 
              switch ($sCarrier) {
                  case "DHL":
-                     $this->_sShipTrackUrl = "http://nolp.dhl.de/nextt-online-public/track.do?zip=".(empty($this->oxorder__oxdelzip->value)?$this->oxorder__oxbillzip->value:$this->oxorder__oxdelzip->value)."&idc=".$sTrackId."&lang=".($this->oxorder__oxlang->value==0?'de':'en');
+                     $this->_sShipTrackUrl = "http://nolp.dhl.de/nextt-online-public/set_identcodes.do?idc=".$sTrackId."&lang=".($this->oxorder__oxlang->value==0?'de':'en');
                      break;
                 case "DPAG":
                     $this->_sShipTrackUrl = "https://www.deutschepost.de/sendungsstatus/bzl/sendung/simpleQueryResult.html?local=".($this->oxorder__oxlang->value==0?'de':'en')."&form.sendungsnummer=".$sTrackId;
